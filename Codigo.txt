@@ -1,0 +1,179 @@
+<!DOCTYPE html><html lang="es" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#F4F7FB;color:#042C6C;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#F4F7FB", "surface-card": "#FFFFFF", "primary-navy": "#042C6C", "secondary-blue": "#3BA2F7", "vibrant-magenta": "#F32682", "accent-amber": "#FEF3C7", "border-subtle": "#E2E8F0" }, "fontFamily": { "body": ["Plus Jakarta Sans", "sans-serif"], "headline": ["Space Grotesk", "sans-serif"], "mono": ["JetBrains Mono", "monospace"] } } } };</script></head><body class="bg-[#F4F7FB] font-body text-[#042C6C] flex flex-col min-h-screen selection:bg-[#3BA2F7] selection:text-white" style="background-color: #F4F7FB; min-height: 100vh;"><main class="flex-1 w-full bg-[#F4F7FB] pb-safe px-4 pt-4 sm:pt-6 flex flex-col relative"><div class="flex flex-col w-full max-w-xl mx-auto pb-8">
+<!-- Interactive Lesson HUD Header -->
+<div class="w-full text-center py-2 mb-3">
+
+<h1 class="font-headline text-2xl sm:text-3xl font-bold text-[#042C6C] leading-tight tracking-tight drop-shadow-xs">¿Es Seguro o Estafa?</h1>
+
+</div>
+<!-- Simulated Device Canvas: Clean Smartphone Realistic Look -->
+<div class="w-full mx-auto flex flex-col items-center">
+<div class="w-full rounded-3xl bg-white p-2.5 sm:p-3 shadow-xl border border-slate-200">
+<div class="w-full rounded-2xl overflow-hidden bg-slate-50 border border-slate-200 flex flex-col shadow-inner">
+<!-- Phone App Bar / Header -->
+<div class="bg-white px-4 py-3.5 flex items-center justify-between border-b border-slate-200">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-[#EAF3FF] text-[#042C6C] flex items-center justify-center font-bold border border-[#3BA2F7]/30 shadow-xs">
+<span class="material-symbols-outlined text-[24px] text-[#3BA2F7]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline text-base font-bold text-[#042C6C]">Banco Nacional</span>
+<span class="material-symbols-outlined text-[#3BA2F7] text-[18px]" title="Identificador SMS">verified</span>
+</div>
+<span class="text-[11px] font-mono font-medium text-slate-500 flex items-center gap-1">SMS entrante&nbsp;</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs font-mono font-semibold px-2 py-0.5 rounded bg-slate-100 text-[#042C6C] border border-slate-300">SMS</span>
+<span class="material-symbols-outlined text-slate-400 text-[20px]">more_vert</span>
+</div>
+</div>
+<!-- Messages Stream Area -->
+<div class="p-4 sm:p-5 flex flex-col bg-gradient-to-b from-[#F8FAFC] to-[#EEF2F6] min-h-[220px]">
+<!-- Timestamp Pill -->
+
+<!-- Incoming SMS Bubble -->
+<div class="self-start w-full max-w-lg rounded-2xl rounded-tl-sm bg-white border border-slate-200 p-4 sm:p-5 shadow-md flex flex-col gap-3 text-[#042C6C]" id="chat-bubble">
+<div class="flex items-center justify-between text-xs text-slate-500 font-mono font-medium border-b border-slate-100 pb-1.5">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px] text-[#3BA2F7]">chat</span> SMS • Red Móvil</span>
+<span class="">14:32</span>
+</div>
+<p class="text-base sm:text-[17px] font-medium text-[#042C6C] leading-relaxed">
+<span class="text-[#F32682] font-bold">&nbsp;URGENTE:</span> Su cuenta bancaria ha sido bloqueada temporalmente. Ingrese aquí en menos de 1 hora para recuperarla:
+          </p>
+<div class="p-3 rounded-xl bg-[#EAF3FF] text-[#042C6C] font-mono text-sm sm:text-base font-semibold flex items-center gap-2.5 break-all border border-[#3BA2F7]/40 shadow-xs transition-colors" id="target-link">
+
+<span class="underline text-[#042C6C] font-bold hover:text-[#3BA2F7] transition-colors">http://banco-alerta.xyz/login</span>
+</div>
+<div class="self-end text-slate-400 text-[11px] font-mono flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Recibido
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Big Arcade Action Buttons -->
+<div class="w-full flex flex-col sm:flex-row gap-3 mt-5" id="action-buttons-container">
+<button class="flex-1 h-16 sm:h-20 rounded-2xl bg-[#E0F2FE] hover:bg-[#bae6fd] text-[#042C6C] active:scale-98 transition-all flex items-center justify-center gap-3 font-headline text-xl sm:text-2xl font-bold shadow-md shadow-sky-100 cursor-pointer border-2 border-[#3BA2F7]" id="btn-safe">
+<span class="material-symbols-outlined text-[32px] text-[#042C6C]">check_circle</span>
+      ES SEGURO
+    </button>
+<button class="flex-1 h-16 sm:h-20 rounded-2xl bg-[#F32682] hover:bg-[#e01570] text-white active:scale-98 transition-all flex items-center justify-center gap-3 font-headline text-xl sm:text-2xl font-extrabold shadow-lg shadow-[#F32682]/30 cursor-pointer border-2 border-white" id="btn-scam">
+<span class="material-symbols-outlined text-[32px]">dangerous</span>
+      ES ESTAFA
+    </button>
+</div>
+<!-- Educational Feedback Panel (revealed on Estafa click) -->
+<div class="w-full flex flex-col gap-3 mt-4 hidden transition-all duration-300" id="feedback-panel">
+<!-- Success Banner -->
+<div class="w-full rounded-2xl bg-[#F32682] p-4 flex items-center justify-center text-white shadow-lg shadow-[#F32682]/25 border-2 border-white">
+<span class="font-headline text-xl sm:text-2xl font-extrabold text-center flex items-center gap-2">
+<span class="material-symbols-outlined text-[32px]">celebration</span>
+        ¡CORRECTO! ES UNA ESTAFA (SMISHING)
+      </span>
+</div>
+<!-- Educational Amber/Yellow Clue Box -->
+<div class="w-full rounded-2xl bg-[#FEF3C7] border-2 border-[#F59E0B] p-4 sm:p-5 text-[#78350F] shadow-md flex flex-col gap-2.5">
+<div class="flex items-center gap-2 text-[#92400E] font-headline text-lg sm:text-xl font-black">
+<span class="material-symbols-outlined text-[28px] text-[#D97706]">lightbulb</span>
+<span class="">PISTA DEL DELITO (SMISHING)</span>
+</div>
+<p class="font-body text-base sm:text-lg leading-relaxed text-[#78350F] font-medium">
+        Los bancos <span class="underline text-[#B45309] font-extrabold bg-amber-100 px-1.5 py-0.5 rounded border border-amber-300">NUNCA</span> te enviarán enlaces con ultimátum de urgencia por SMS solicitando acceder a tu cuenta, ni usarán dominios no oficiales como <span class="bg-white text-[#B45309] px-2 py-0.5 rounded font-mono font-bold border border-amber-300">.xyz</span>.
+      </p>
+</div>
+<!-- Next Case Button -->
+<button class="w-full h-16 rounded-2xl bg-[#042C6C] hover:bg-[#063c91] text-white transition-all flex items-center justify-center gap-3 font-headline text-xl font-bold shadow-lg shadow-[#042C6C]/20 active:scale-98 cursor-pointer border-2 border-[#3BA2F7]" id="next-case-btn">
+<span class="">SIGUIENTE CASO</span>
+<span class="material-symbols-outlined text-[26px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function initForensicExercise() {
+    const btnScam = document.getElementById('btn-scam');
+    const btnSafe = document.getElementById('btn-safe');
+    const feedbackPanel = document.getElementById('feedback-panel');
+    const targetLink = document.getElementById('target-link');
+    const nextBtn = document.getElementById('next-case-btn');
+
+    let audioEnabled = true;
+
+    // Synthesize Bell/Chime audio using Web Audio API
+    function playVictoryChime() {
+      if (!audioEnabled) return;
+      try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContext) return;
+        const ctx = new AudioContext();
+        
+        // Primary Bell Tone
+        const osc1 = ctx.createOscillator();
+        const gain1 = ctx.createGain();
+        osc1.type = 'sine';
+        osc1.frequency.setValueAtTime(880, ctx.currentTime); // A5
+        osc1.frequency.exponentialRampToValueAtTime(440, ctx.currentTime + 0.8);
+        gain1.gain.setValueAtTime(0.3, ctx.currentTime);
+        gain1.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.8);
+        osc1.connect(gain1);
+        gain1.connect(ctx.destination);
+        
+        // Harmonics
+        const osc2 = ctx.createOscillator();
+        const gain2 = ctx.createGain();
+        osc2.type = 'triangle';
+        osc2.frequency.setValueAtTime(1760, ctx.currentTime); // A6
+        gain2.gain.setValueAtTime(0.15, ctx.currentTime);
+        gain2.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5);
+        osc2.connect(gain2);
+        gain2.connect(ctx.destination);
+
+        osc1.start();
+        osc2.start();
+        osc1.stop(ctx.currentTime + 0.8);
+        osc2.stop(ctx.currentTime + 0.5);
+      } catch (e) {
+        // Fallback
+      }
+    }
+
+    function triggerSuccess() {
+      playVictoryChime();
+
+      // Highlight clue inside chat bubble
+      targetLink.classList.remove('bg-[#EAF3FF]', 'text-[#042C6C]', 'border-[#3BA2F7]/40');
+      targetLink.classList.add('bg-rose-100', 'text-[#900B3B]', 'border-rose-300', 'font-bold');
+
+      // Disable Buttons
+      btnScam.disabled = true;
+      btnSafe.disabled = true;
+      btnScam.classList.add('opacity-50', 'pointer-events-none');
+      btnSafe.classList.add('opacity-50', 'pointer-events-none');
+
+      // Animate In Feedback Panel
+      feedbackPanel.classList.remove('hidden');
+      requestAnimationFrame(() => {
+        feedbackPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    }
+
+    btnScam.addEventListener('click', triggerSuccess);
+
+    // Micro-interaction on wrong choice
+    btnSafe.addEventListener('click', () => {
+      btnSafe.classList.add('translate-x-1');
+      setTimeout(() => btnSafe.classList.remove('translate-x-1'), 150);
+      alert('¡Cuidado! Este mensaje contiene vectores críticos de phishing. Revisa el enlace con atención y pulsa "ES ESTAFA".');
+    });
+
+    nextBtn.addEventListener('click', () => {
+      nextBtn.innerHTML = `<span>Cargando Caso #05...</span>`;
+      setTimeout(() => {
+        alert('Excelente trabajo. Avanzando al siguiente módulo de simulación.');
+      }, 300);
+    });
+  })();
+</script></main>
+
+</body></html>
