@@ -86,7 +86,7 @@ export default function PrizeModal({ score, totalCases, soundEnabled, onPlayAgai
               <span>¿Quieres aprender más?</span>
             </div>
             <p className="font-body text-xs sm:text-sm text-slate-700 leading-relaxed">
-              <strong>¡Reclama tu premio en la feria!</strong> Te esperamos en la <strong>Feria Financiera de Interseguro</strong> este <span className="bg-[#0A6AF5] text-white px-2 py-0.5 rounded font-bold inline-block">29 de Octubre</span>.
+              <strong>¡Reclama tu premio en la feria!</strong> Te esperamos en la <strong>Feria de Interseguro</strong> este <span className="bg-[#0A6AF5] text-white px-2 py-0.5 rounded font-bold inline-block">29 de Octubre</span>.
             </p>
             <div className="flex items-start gap-1.5 text-xs text-[#042C6C] font-medium bg-white/80 p-2.5 rounded-xl border border-[#3BA2F7]/20">
               <BookOpen size={16} className="text-[#3BA2F7] shrink-0 mt-0.5" />
