@@ -54,7 +54,32 @@ export default function PrizeModal({ score, totalCases, soundEnabled, onPlayAgai
 
 
           {/* Prize Voucher Card */}
+          {/* Prize Voucher Card */}
+          <div className="w-full bg-gradient-to-b from-[#F4F7FB] to-[#E6F1F9] rounded-2xl p-5 border-2 border-[#3BA2F7]/40 shadow-md flex flex-col items-center gap-3 mb-6 relative overflow-hidden">
+            <div className="absolute -right-6 -bottom-6 opacity-10 text-[#042C6C]">
+              <Award size={120} />
+            </div>
 
+            <div className="flex items-center gap-2 text-[#042C6C] font-headline font-bold text-lg">
+              <Sparkles className="text-[#F32682]" size={20} />
+              <span>Premio Interseguro</span>
+            </div>
+
+            <p className="text-xs sm:text-sm text-slate-600">
+              Cupón especial por completar el juego
+            </p>
+
+            <div className="bg-white px-4 py-2.5 rounded-xl border border-slate-300 font-mono font-bold text-[#042C6C] text-sm sm:text-base flex items-center justify-between gap-3 w-full max-w-xs shadow-xs">
+              <span>INTERSEGURO-2026</span>
+              <button
+                onClick={handleCopyCode}
+                className="text-xs bg-[#0A6AF5] hover:bg-[#074EAB] text-white px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1 font-sans"
+              >
+                {copied ? <Check size={14} /> : <Copy size={14} />}
+                {copied ? '¡Copiado!' : 'Copiar'}
+              </button>
+            </div>
+          </div>
 
 
           <button

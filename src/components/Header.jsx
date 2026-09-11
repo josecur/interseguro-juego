@@ -5,20 +5,14 @@ export default function Header({ score, currentStep, totalSteps, soundEnabled, s
   return (
     <header className="w-full bg-[#0A6AF5] text-white shadow-md">
       {/* Top Brand Bar */}
-      <div className="max-w-xl mx-auto px-4 py-2.5 flex items-center justify-between">
+      <div className="max-w-xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          {/* Interseguro Brand Square Icon */}
-          <div className="w-7 h-7 bg-white rounded flex items-center justify-center font-bold text-[#0A6AF5] shadow-sm">
-            <span className="material-symbols-outlined text-[18px]">verified_user</span>
-          </div>
-          <span className="font-headline font-extrabold text-lg tracking-tight">
-            Interseguro
-          </span>
+          <img src="./interseguro-logo.png" alt="Interseguro" className="h-9 sm:h-7 object-contain" />
         </div>
 
         <div className="flex items-center gap-3">
           {/* Mute/Unmute Audio Button */}
-          <button 
+          <button
             onClick={() => setSoundEnabled(!soundEnabled)}
             className="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors flex items-center gap-1.5 text-xs font-medium"
             title={soundEnabled ? "Silenciar audio" : "Activar audio"}
