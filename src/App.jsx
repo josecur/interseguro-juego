@@ -6,10 +6,24 @@ import PrizeModal from './components/PrizeModal';
 import { CASES_BANK } from './data/cases';
 import { playSuccessSound, playErrorSound } from './utils/audio';
 
-// Helper function to pick 3 random cases from bank of 9
+// Helper function to pick 3 random cases with a balanced mix of safe and scam cases
 function getRandomCases(bank, count = 3) {
-  const shuffled = [...bank].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
+  const scams = bank.filter(c => c.isScam);
+  const safes = bank.filter(c => !c.isScam);
+
+  const shuffledScams = [...scams].sort(() => 0.5 - Math.random());
+  const shuffledSafes = [...safes].sort(() => 0.5 - Math.random());
+
+  // Alternate between 2 scams + 1 safe OR 1 scam + 2 safes randomly
+  const pickScamCount = Math.random() > 0.5 ? 2 : 1;
+  const pickSafeCount = count - pickScamCount;
+
+  const roundCases = [
+    ...shuffledScams.slice(0, pickScamCount),
+    ...shuffledSafes.slice(0, pickSafeCount)
+  ].sort(() => 0.5 - Math.random());
+
+  return roundCases;
 }
 
 export default function App() {
