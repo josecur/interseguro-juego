@@ -26,7 +26,7 @@ export default function PrizeModal({ score, totalCases, soundEnabled, onPlayAgai
   }, [isWinner, soundEnabled]);
 
   const handleCopyCode = () => {
-    navigator.clipboard.writeText('INTERSEGURO-FERIA-2026');
+    navigator.clipboard.writeText('INTERSEGURO-BOLSILLO-2026');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -40,16 +40,12 @@ export default function PrizeModal({ score, totalCases, soundEnabled, onPlayAgai
             <Trophy size={42} />
           </div>
 
-          <span className="text-xs font-mono font-bold tracking-widest text-[#F32682] uppercase bg-pink-50 px-3 py-1 rounded-full border border-pink-200 mb-2">
-            ¡Meta Alcanzada!
-          </span>
-
           <h2 className="font-headline text-2xl sm:text-3xl font-extrabold text-[#042C6C] mb-2 leading-tight">
             ¡Felicidades! Ganaste tu Premio 🎉
           </h2>
 
           <p className="font-body text-slate-600 text-sm sm:text-base mb-5">
-            Lograste <strong className="text-[#0A6AF5] font-bold">{score} de {totalCases} aciertos</strong>. Demostraste que sabes identificar estafas digitales.
+            Lograste <strong className="text-[#0A6AF5] font-bold">{score} de {totalCases} aciertos</strong>. Demostraste que sabes proteger tu dinero contra estafas financieras.
           </p>
 
           {/* Prize Voucher Card */}
@@ -60,11 +56,11 @@ export default function PrizeModal({ score, totalCases, soundEnabled, onPlayAgai
 
             <div className="flex items-center gap-2 text-[#042C6C] font-headline font-bold text-lg">
               <Gift className="text-[#F32682]" size={22} />
-              <span>Premio Interseguro</span>
+              <span>Premio Aliados de tu Bolsillo</span>
             </div>
 
             <p className="text-xs sm:text-sm text-slate-600 font-medium">
-              Presenta este código en la feria para reclamar tu premio físico
+              Reclama tu premio en la feria presentando este código
             </p>
 
             <div className="bg-white px-4 py-2.5 rounded-xl border border-slate-300 font-mono font-bold text-[#042C6C] text-sm sm:text-base flex items-center justify-between gap-3 w-full max-w-xs shadow-xs">
@@ -81,17 +77,14 @@ export default function PrizeModal({ score, totalCases, soundEnabled, onPlayAgai
 
           {/* Special Invitation Card: Feria Financiera Interseguro */}
           <div className="w-full bg-[#EAF3FF] rounded-2xl p-4 sm:p-5 border-2 border-[#0A6AF5]/30 shadow-sm flex flex-col gap-2.5 mb-6 text-left">
-            <div className="flex items-center gap-2 text-[#042C6C] font-headline font-bold text-base sm:text-lg">
+            <div className="flex items-center gap-1 text-[#042C6C] font-headline font-bold text-base sm:text-lg">
               <Calendar className="text-[#0A6AF5]" size={22} />
-              <span>¿Quieres aprender más?</span>
+              <span>¿Quieres aprender más sobre tus finanzas?</span>
             </div>
-            <p className="font-body text-xs sm:text-sm text-slate-700 leading-relaxed">
-              <strong>¡Reclama tu premio en la feria!</strong> Te esperamos en la <strong>Feria de Interseguro</strong> este <span className="bg-[#0A6AF5] text-white px-2 py-0.5 rounded font-bold inline-block">29 de Octubre</span>.
+            <p className="font-body text-xs gap-1 sm:text-sm text-slate-700 leading-relaxed">
+              Te esperamos en la <strong>Feria Financiera de Interseguro "Aliados de tu bolsillo"</strong> este <span className="bg-[#0A6AF5] text-white px-2 py-0.5 rounded font-bold inline-block">29 de Octubre</span>
             </p>
-            <div className="flex items-start gap-1.5 text-xs text-[#042C6C] font-medium bg-white/80 p-2.5 rounded-xl border border-[#3BA2F7]/20">
-              <BookOpen size={16} className="text-[#3BA2F7] shrink-0 mt-0.5" />
-              <span>Ven para aprender más sobre este y más temas.</span>
-            </div>
+
           </div>
 
           <button
@@ -129,10 +122,10 @@ export default function PrizeModal({ score, totalCases, soundEnabled, onPlayAgai
           <div className="w-full bg-[#EAF3FF] rounded-2xl p-4 border border-[#0A6AF5]/30 text-left mb-6 flex flex-col gap-2">
             <div className="flex items-center gap-2 text-[#042C6C] font-headline font-bold text-sm sm:text-base">
               <Calendar className="text-[#0A6AF5]" size={20} />
-              <span>¿Quieres aprender más sobre ciberseguridad?</span>
+              <span>¿Quieres aprender más sobre la protección de tu dinero?</span>
             </div>
             <p className="font-body text-xs text-slate-700 leading-relaxed">
-              Visítanos en la <strong>Feria Financiera de Interseguro</strong> este <strong className="text-[#0A6AF5]">29 de Octubre</strong> para participar por premios en vivo y aprender a proteger tus finanzas.
+              Te esperamos en la <strong>Feria Financiera de Interseguro "Aliados de tu bolsillo"</strong> este <strong className="text-[#0A6AF5]">29 de Octubre</strong> para aprender más sobre este y más temas de ciberseguridad financiera.
             </p>
           </div>
 
