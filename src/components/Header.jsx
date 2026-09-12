@@ -37,9 +37,8 @@ export default function Header({ score, currentStep, totalSteps, soundEnabled, s
       <div className="bg-[#042C6C] border-t border-white/10 py-3 px-4 shadow-inner">
         <div className="max-w-xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="text-[#3BA2F7]" size={22} />
             <h1 className="font-headline text-lg sm:text-xl font-bold text-white tracking-tight">
-              ¿Es Seguro o Estafa?
+              Aliados de tu bolsillo
             </h1>
           </div>
 
